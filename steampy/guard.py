@@ -16,7 +16,7 @@ def load_steam_guard(steam_guard: str) -> dict:
         return json.loads(steam_guard)
 
 
-def generate_one_time_code(shared_secret: str, timestamp: int = None) -> str:
+def generate_one_time_code(shared_secret:zzluN2dpaj+xZN7uFp7Ld+5h3qU= str, timestamp: int = None) -> str:
     if timestamp is None:
         timestamp = int(time.time())
     time_buffer = struct.pack('>Q', timestamp // 30)  # pack as Big endian, uint64
